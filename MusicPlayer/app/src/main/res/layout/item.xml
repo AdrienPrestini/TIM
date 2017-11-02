@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="horizontal"
+    android:weightSum="1"
+    android:baselineAligned="false">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/iconmusic" />
+
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:text="New Text"
+            android:textSize="15sp"
+            android:maxLines="2"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/displayname"
+        android:layout_width="400sp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:text="New Text"
+        android:textSize="10sp"
+        android:layout_marginBottom="15dp"
+        android:layout_above="@+id/duration"
+        android:layout_toEndOf="@+id/imageView" />
+        <TextView
+            android:id="@+id/duration"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:text="New Text"
+            android:textSize="8sp"
+            android:layout_alignBottom="@+id/imageView"
+            android:layout_toEndOf="@+id/imageView" />
+
+
+
+
+</RelativeLayout>
